@@ -83,8 +83,8 @@
       // console.log(res);
       // 存储 token
       localStorage.setItem('token',res.token)
-      // 跳转
-      // location.href = '/indexngx.html'
+      // 跳转 
+      location.href = '/indexngx.html' 
       }
     })
   })
