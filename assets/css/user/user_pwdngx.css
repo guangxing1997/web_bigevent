@@ -1,0 +1,13 @@
+/* 初始化页面 */
+html{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  background-color: #F2F3F5;
+  padding:17px !important;
+}
+.layui-form-item{
+  width: 500px;
+}

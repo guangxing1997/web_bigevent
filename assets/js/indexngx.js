@@ -30,7 +30,7 @@ function getUserInfo(){
       if(res.status!==0){
         return layer.msg('获取用户信息失败！')
       }else{
-        console.log(res)
+        // console.log(res)
         renderUserName(res)
         renderUserImg(res)
       }
@@ -52,7 +52,8 @@ function renderUserImg({data}){
   if(data.user_pic !== null){
     $('.layui-nav-img').attr('src',data.user_pic).show().next().hide()
   }else{
-    $('.textPhoto').html(data.username[0]).show().prev().hide()
+    let first = data.nickname[0].toUpperCase()
+    $('.textPhoto').html(first).show().prev().hide()
   }
 }
 
